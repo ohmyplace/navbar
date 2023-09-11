@@ -1,0 +1,203 @@
+/* Font Family import here */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+p,a,li{
+    overflow-x: hidden;
+}
+.wp-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #000041;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo-image img{
+    width: 80px;
+
+}
+.logo-name p{
+    color: white;
+    letter-spacing: 0.8;
+    
+}
+.logo-name .sub-title{
+    margin-top: 2.3rem;
+}
+.sub-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.3rem 0 1.5rem 0;
+}
+
+.button{
+    width: 20rem;
+    height: 5rem;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius:0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.button-call{
+    font-size: 18px;
+    opacity: 2;
+    background-color: #000041;
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+.button-account{
+    background-color: #000041;
+    border: 1px solid white;
+    width: 15rem;
+    margin: 0 2rem;
+    opacity: 2;
+    font-size: 1.5rem;
+    padding: 1rem 0.8rem;
+    color: white;
+    font-weight: 700;
+}
+
+
+.fa-solid{
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 2rem;
+}
+.button:hover{
+    color:#FFEE00;
+    transform: translateY(-0.5rem);
+}
+.button-account:hover{
+    background-color: #FFEE00;
+    color: #000041;
+    font-weight: 700;
+}
+.fa-phone{
+    color: #FFEE00;
+}
+.fa-bars{
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+.fa-bars:hover{
+    color: #FFEE00;
+    transform: translateY(-0.5rem);
+}
+.navbar{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.nav-first{
+    width: 40%;
+    max-width: 42rem;
+    min-width: 32rem;
+    background-color: #FFEE00;
+}
+.nav-second{
+    background-color: #fff;
+    width: 95%;
+
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: #000041;
+}
+
+.nav-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.navbar a{
+    font-size: 1.9rem;
+    /* text-transform: uppercase; */
+    font-weight: 800;
+    color: #fff;
+    transition: transition 0.3s ease;
+}
+
+.navbar a:hover{
+    transform: translateY(-0.5rem);
+    color: #ffee00;
+}
+
+.active{
+    transform: translateX(0);
+}
+
+.fa-square-xmark{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: #fff;
+    transition: transition 0.3s ease;
+}
+.fa-square-xmark:hover{
+    color: #FFEE00;
+    transform: translateY(-0.5rem);
+}
+.social-links{
+    position: absolute;
+    bottom: 10%;
+}
+.social-links i{
+    margin-left: 2rem;
+    font-size: 3rem;
+    transition: transition 0.3s ease;
+    margin-bottom: 2rem;
+}
+.social-links i:hover{
+    color: #FFEE00;
+    transform: translateY(-.5rem);
+}
+.site-link a{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    color: #FFEE00;
+}
+.site-link a:hover{
+    color: #fff;
+}

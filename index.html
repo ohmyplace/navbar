@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh! My Place</title>
+    <script src="https://kit.fontawesome.com/6d48356714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="wp-navbar">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="assets/lOGO PNG.png" alt="Oh!MyPlace.Com Logo Image">
+            </div>
+            
+        </div>
+        
+        <div class="menu">
+            <button class="button button-call">
+                <i class="fa-solid fa-phone"></i>
+                8800118508
+            </button>
+            <button class="button button-account">
+                Sign In/ Sign Up
+            </button>
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <div class="navbar nav-first">
+                <div class="navbar nav-second">
+                    <div class="navbar nav-list">
+                        <i class="fa-solid fa-square-xmark"></i>
+                        <ul>
+                            <li><a href="#">Corporate Housing!</a></li>
+                            <li><a href="#">Housing Partners</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Oh! Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+
+                        </ul>
+                        <div class="social-links">
+                            <a href="#Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#Google"><i class="fa-brands fa-google"></i></a>
+                            <div class="site-link">
+                                <a href="#FAQ">FAQ</a>
+                                <a href="#Blog">Blog</a>
+                                <a href="#tc">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        console.log('I am Working Guys');
+        const open_menu = document.querySelector('.fa-bars'); // Use ".fa-bars" for class selection
+        const close_menu = document.querySelector('.fa-square-xmark'); // Use ".fa-square-xmark" for class selection
+        const nav_active = document.querySelectorAll('.navbar'); // Use ".navbar" for class selection
+
+        open_menu.addEventListener('click', () => { // Use lowercase "click" for the event
+            nav_active.forEach((eleme) => {
+                eleme.classList.add('active');
+            });
+        });
+
+
+        close_menu.addEventListener('click', () => { // Use lowercase "click" for the event
+            nav_active.forEach((eleme) => {
+                eleme.classList.remove('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
